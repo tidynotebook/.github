@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question
+    url: https://github.com/tidynotebook/tidynotebook/discussions/new?category=q-a
+    about: Ask for help with setup or use in Discussions.
+  - name: Share an idea
+    url: https://github.com/tidynotebook/tidynotebook/discussions/new?category=ideas
+    about: Talk about an idea before it becomes a feature request.
+  - name: Report a security problem
+    url: https://github.com/tidynotebook/tidynotebook/security/advisories/new
+    about: Report it privately. Do not open a public issue.

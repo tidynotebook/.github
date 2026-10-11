@@ -1,0 +1,64 @@
+name: Bug report
+description: Something does not work as the documentation says.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not report a security problem here. Use **Report a security problem** on the previous page.
+        Do not paste the text of a private note, a password, or a secret.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: Tell what you saw. Add the exact message if there is one.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open a note.
+        2. Type some text.
+        3. Press Ctrl + S.
+    validations:
+      required: true
+  - type: dropdown
+    id: edition
+    attributes:
+      label: Edition
+      options:
+        - tidy notebook self-hosted
+        - tidy notebook cloud
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: For self-hosted, the release or the image tag.
+      placeholder: 0.18.1
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and operating system
+      placeholder: Firefox 140 on Ubuntu 24.04
+    validations:
+      required: true
+  - type: textarea
+    id: deployment
+    attributes:
+      label: Deployment
+      description: For self-hosted, the reverse proxy and any change to the Compose file.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or logs
+      description: Remove private data before you add them.
